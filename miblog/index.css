@@ -1,0 +1,159 @@
+
+*{
+    padding: 5px;
+    margin: 5px;
+    box-sizing: border-box;
+}
+body{
+  
+    background-color: #888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0; /* Ajuste para evitar duplicación de margen */
+    padding: 20px; /* Añadido para mejorar el espacio en los bordes */
+    /*
+    background-color: #888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin:auto;
+    max-width: 600px;
+    min-width: 250px;
+*/
+}
+
+/*header */
+
+
+.head{
+display: flex;
+align-items: center;
+justify-content:  center;
+flex-wrap: wrap;
+text-align: center;
+}
+
+.title{
+    font-size: 2.5rem;
+    font-family: Noto Sans, sans-serif Georgia, serif;
+    font-weight: bold;
+    width: auto;
+
+}
+.subtitle{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif, Courier, monospace;
+    
+}
+.text{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif, Courier, monospace;
+    
+}
+
+.img{
+    border-radius: 50%;
+    border: 10px solid black;
+
+ }
+ 
+ .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+ }
+
+/* main */
+
+
+.section-one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-one img{
+    border-radius: 50%;
+    border: 10px solid black;
+    width: 10rem;
+    height: 10rem;
+}
+
+.section-one p{
+    text-align: center;
+    text-wrap: pretty;
+    text-justify: auto;
+    font-size: 1.5rem;
+    margin: auto;
+    padding: 10px;
+    max-width: 40rem;
+
+}
+.section-one figcaption{
+    text-align: center;
+    text-justify: auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.section-one video{
+    width: 300px;
+    height: 400px;
+}
+
+
+
+.footer{
+    width: 5rem;
+    height: 5rem;
+    margin: auto;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.footer:hover{
+background-color: #fff;
+
+}
+
+
+
+
+
+/* Estilos para hacer el diseño responsivo */
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 2rem; 
+    }
+
+    .subtitle, .text {
+        font-size: 1rem; /
+    }
+
+    .img {
+        width: 150px; 
+        height: 150px; 
+    }
+
+    .section-one img {
+        width: 150px; 
+        height: 150px; 
+    }
+
+    .section-one p, .section-one figcaption {
+        font-size: 0.9rem; 
+
+        }
+        .footer:hover{
+            background-color: #fff;
+            
+            }
+}
+
